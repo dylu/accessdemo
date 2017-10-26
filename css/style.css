@@ -1,0 +1,300 @@
+/**
+ * Main css page for dlu main website.
+ * 
+ * Written with CSS3 in mind, hopefully.
+ */
+
+
+/* 
+ * Transition class for smoother animations.
+ */
+.transition
+{
+	/* Supporting previous old browsers. */
+	-webkit-transition: all 0.4s ease-out;
+	-moz-transition: all 0.4s ease-out;
+	-o-transition: all 0.4s ease-out;
+
+	transition: all 0.4s ease-out;
+}
+
+/* 
+ * Fast transition class for faster animations.
+ */
+.transFast
+{
+	/* Supporting previous old browsers. */
+	-webkit-transition: all 0.2s ease-out;
+	-moz-transition: all 0.2s ease-out;
+	-o-transition: all 0.2s ease-out;
+
+	transition: all 0.2s ease-out;
+}
+
+
+
+/**
+ * General CSS.
+ */
+
+html, body
+{
+	/* Adjusts font-size to be managable via 'em' values. */
+	font-size: 62.5%;
+
+	/* Adjusts margins and padding. (a mini 'css reset') */
+	margin: 0px;
+	padding: 0px;
+	vertical-align: baseline;
+
+	/*background-image: linear-gradient(to right, 
+		rgba(220, 220, 220, 1), 
+		#999 10%, 
+		#999 90%,
+		rgba(220, 220, 220, 1));*/
+}
+
+div, span, h1, h2, h3, p, ul, li
+{
+	font-size: 100%;
+	margin: 0em;
+	padding: 0em;
+	vertical-align: baseline;
+}
+
+body
+{
+	background-color: #EEE;
+    /*background: #666;*/
+}
+
+
+/* Styling for list items. */
+li
+{
+    display: list-item;
+}
+
+/* Styling Horizonal Rules. */
+hr
+{
+	width: 66%;
+	height: 1px;
+	border: 0;
+	background-image: linear-gradient(to right, 
+		rgba(10, 10, 10, 0), 
+		rgba(10, 10, 10, 1) 36%, 
+		rgba(10, 10, 10, 1) 64%,
+		rgba(10, 10, 10, 0));
+}
+
+/* 
+ * Styling all links that are displayed on the website.
+ * 
+ * First regular/visited, then hover versions.
+ */
+a:link
+{
+	color: rgba(36, 80, 236, 0.9);
+	text-decoration: none;
+	cursor: auto;
+}
+a:visited
+{
+	color: rgba(110, 42, 236, 0.9);
+	text-decoration: none;
+	cursor: auto;
+}
+
+/* Hover */
+a:link:hover
+{
+	color: rgba(64, 124, 250, 0.9);
+}
+a:visited:hover
+{
+	color: rgba(142, 66, 250, 0.9);
+}
+
+/* Hovering over a link */
+a:hover
+{
+	text-decoration: underline;
+}
+
+/*
+ * Styling active links.
+ * (I believe this refers to links that are clicked on.)
+ */
+a:link:active, a:visited:active
+{
+	/*color: red;*/
+	/*text-decoration: line-through;*/
+}
+
+
+
+/* Header -- Page Subject */
+
+#pageSubject
+{
+	overflow: visible;
+	max-width: 86em;
+	height: 14em;
+	/*margin: 0em 0em;*/
+	/*padding: 0em 0em;*/
+
+	/*background-color: #F22;*/
+}
+
+#pageSubject h1
+{
+	
+	font-family: 'Raleway', 'Helvetica', helvetica, sans-serif;
+	font-weight: 200;
+	font-size: 12em;
+	line-height: 86%;
+	letter-spacing: 0.12em;
+	color: #FFF;
+}
+
+#pageSubject p
+{
+	font-family: 'Questrial', helvetica, sans-serif;
+	font-weight: 400;
+	font-size: 4em;
+	line-height: 200%;
+	letter-spacing: 0.1em;
+	color: #FFF;
+}
+
+#pageSubject a
+{
+	text-decoration: none;
+	color: #FFF;
+}
+
+
+
+/********** ********** ********** ********** **********
+ * Content - Wraps main content on page.
+ ********** ********** ********** ********** ********** */
+
+.contentWrapper
+{
+	position: relative;
+	z-index: 10;
+	padding-top: 2em;
+
+    background: #EEE;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.contentWrapper.exPadding
+{
+	padding-top: 8em;
+}
+
+#content
+{
+	margin: 0em 1em;
+}
+
+
+/********** ********** ********** ********** **********
+ * Entries 
+ ********** ********** ********** ********** ********** */
+
+.entry
+{
+	text-align: center;
+	margin: 6em 3.6em;
+}
+
+.e_title /* h2 */
+{
+	font-family: 'Questrial', helvetica, sans-serif;
+	font-weight: 400;
+	font-size: 6.6em;
+	margin: 1em 1em;
+	/*background-color: green;*/
+}
+
+.entry h3
+{
+	font-family: 'Questrial', helvetica, sans-serif;
+	font-weight: 400;
+	font-size: 1.6em;
+	margin: 0.8em 0.4em 0.2em 0.4em; /* trbl */
+}
+
+.e_images 
+{
+	font-size: 2.4em;
+}
+
+.e_images img
+{
+	height: 6em;
+	width: 6em;
+	margin: 1.0em 0.8em 0.6em 0.8em;
+}
+
+.e_images img:hover
+{
+	height: 6.6em;
+	width: 6.6em;
+	margin: 0.4em 0.5em 0.4em 0.5em;
+}
+
+.e_img
+{
+
+}
+
+.e_text
+{
+	font-family: 'Merriweather', palatino, serif;
+	font-weight: 400;
+	font-size: 3em;
+	margin: 0.6em 2em;
+	line-height: 2.4em;
+}
+
+.e_text p
+{
+	margin: 0.8em 0em;
+}
+
+.e_expandButton
+{
+	font-family: 'Merriweather', palatino, serif;
+	font-weight: 400;
+	font-size: 1.1em;
+
+	margin: 0px 0px;
+	border: hidden;
+	background-color: #FAFAFA;
+	height: 80px;
+	width: 400px;
+
+
+	background-image: linear-gradient(to right, 
+		#EEE, 
+		#FAFAFA 36%, 
+		#FAFAFA 64%,
+		#EEE);
+
+	/*background-image: radial-gradient( ellipse, 
+		#FFF,
+		#EEE 60%);*/
+}
+
+.e_readmore
+{
+	background-color: green;
+	display: none;
+}
+
+
