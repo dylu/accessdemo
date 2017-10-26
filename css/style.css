@@ -238,7 +238,8 @@ a:link:active, a:visited:active
 {
 	height: 15em;
 	width: 15em;
-	margin: 1.6em 1.1em 0.8em 1.1em;
+	margin: 2.0em 1.3em 1.0em 1.3em;
+	/* top left bot right */
 }
 
 .e_images img:hover
