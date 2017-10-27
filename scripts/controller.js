@@ -1,11 +1,11 @@
 /** Defined Fields **/
-e_Body = document.body;
-e_Navbar = document.querySelector(".navbar");
-e_Content = document.querySelector(".contentWrapper");
-e_Lightbox = document.querySelector("#lightbox_fs");
-e_LBMainImg = document.querySelector("#lightbox_img");
-// e_LB_imgs = document.querySelectorAll(".e_img");
-e_LB_imgs = document.querySelector("#image01");
+// e_Body = document.body;
+// e_Navbar = document.querySelector(".navbar");
+// e_Content = document.querySelector(".contentWrapper");
+// e_Lightbox = document.querySelector("#lightbox_fs");
+// e_LBMainImg = document.querySelector("#lightbox_img");
+// // e_LB_imgs = document.querySelectorAll(".e_img");
+// e_LB_imgs = document.querySelector("#image01");
 // e_LB_subImgs = document.querySelectorAll("#lightbox_bottom");
 // e_LB_arrowL = document.querySelector("#lightbox_left");
 // e_LB_arrowR = document.querySelector("#lightbox_right");
@@ -37,76 +37,76 @@ e_LB_imgs = document.querySelector("#image01");
 // e_LB_arrowL.addEventListener("click", lbArrows, false);
 // e_LB_arrowR.addEventListener("click", lbArrows, false);
 
-function lbArrows(e) {
-	if (e.target !== e.currentTarget)
-	{
-		var clickedItem = e.target;
+// function lbArrows(e) {
+// 	if (e.target !== e.currentTarget)
+// 	{
+// 		var clickedItem = e.target;
 
-	}
+// 	}
 
-	e.stopPropagation();
-}
+// 	e.stopPropagation();
+// }
 
 
-e_LB_imgs.addEventListener("click", openLightbox, false)
+// e_LB_imgs.addEventListener("click", openLightbox, false)
 
-function openLightbox(e) {
-	if (e.target !== e.currentTarget)
-	{
-		var clickedItem = e.target;
+// function openLightbox(e) {
+// 	if (e.target !== e.currentTarget)
+// 	{
+// 		var clickedItem = e.target;
 
-		e_LBMainImg.src = clickedItem.src;
-		// openOthers(e);
-		e_Lightbox.classList.add("lightsOut");
-	}
-	// if (e.target == e_LB_imgs)
-	// {
-	// 	alert("test");
-	// 	e.stopPropagation();
-	// }
+// 		e_LBMainImg.src = clickedItem.src;
+// 		// openOthers(e);
+// 		e_Lightbox.classList.add("lightsOut");
+// 	}
+// 	// if (e.target == e_LB_imgs)
+// 	// {
+// 	// 	alert("test");
+// 	// 	e.stopPropagation();
+// 	// }
 
-	e.stopPropagation();
-}
+// 	e.stopPropagation();
+// }
 
-function openOthers(e)
-{
-	// alert(e.target.parentNode.classList);
+// function openOthers(e)
+// {
+// 	// alert(e.target.parentNode.classList);
 	
-	var imgTest = document.createElement('img');
+// 	var imgTest = document.createElement('img');
 
-	imgTest.src = e.target.src;
+// 	imgTest.src = e.target.src;
 
-	var siblings = e.target.parentNode.getElementsByTagName('img');
-	// var parentN = e.target.parentNode;
+// 	var siblings = e.target.parentNode.getElementsByTagName('img');
+// 	// var parentN = e.target.parentNode;
 
-	// var parent = document.getElementById(parentN.id);
+// 	// var parent = document.getElementById(parentN.id);
 
-	// alert(parent);
+// 	// alert(parent);
 
 
-	// var siblings = document.querySelectorAll('.e_img');
+// 	// var siblings = document.querySelectorAll('.e_img');
 
-	// var siblings = parent.getElementsByTagName('img');
+// 	// var siblings = parent.getElementsByTagName('img');
 
-	var divTest = document.getElementById('lightbox_bottom');
+// 	var divTest = document.getElementById('lightbox_bottom');
 
-	for (i = 0; i < siblings.length; i++)
-	{
-		var itest = document.createElement('img');
-		itest.setAttribute('src', siblings[i].getAttribute('src'));
+// 	for (i = 0; i < siblings.length; i++)
+// 	{
+// 		var itest = document.createElement('img');
+// 		itest.setAttribute('src', siblings[i].getAttribute('src'));
 
-		// divTest.appendChild(itest);
+// 		// divTest.appendChild(itest);
 		
-		// alert(siblings[i]);
-	}
+// 		// alert(siblings[i]);
+// 	}
 
 
-	// var divTest = document.getElementById('lightbox_bottom');
+// 	// var divTest = document.getElementById('lightbox_bottom');
 
-	// divTest.appendChild(imgTest);
+// 	// divTest.appendChild(imgTest);
 
-	// e_LB_subImgs.appendChild(imgTest);
-}
+// 	// e_LB_subImgs.appendChild(imgTest);
+// }
 
 // e_LB_imgs.forEach(function(lb_img)
 // 	{
@@ -172,7 +172,7 @@ function openOthers(e)
 // }
 
 
-e_Lightbox.onclick = function()
-{
-	e_Lightbox.classList.remove("lightsOut");
-}
+// e_Lightbox.onclick = function()
+// {
+// 	e_Lightbox.classList.remove("lightsOut");
+// }
