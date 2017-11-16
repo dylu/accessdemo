@@ -40,7 +40,7 @@
 html, body
 {
 	/* Adjusts font-size to be managable via 'em' values. */
-	font-size: 62.5%;
+	font-size: 82.5%;
 
 	/* Adjusts margins and padding. (a mini 'css reset') */
 	margin: 0px;
